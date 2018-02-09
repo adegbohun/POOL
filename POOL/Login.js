@@ -45,7 +45,7 @@ export default class Login extends React.Component {
                     <TouchableOpacity
                         style={styles.btn}
                         onPress={this.login}>
-                        <Text>Log in </Text>
+                        <Text style={styles.white}>Log in </Text>
                     </TouchableOpacity>
                     
                     </View>
@@ -63,7 +63,7 @@ export default class Login extends React.Component {
                 'Accept' : 'application/json',
                 'Content-Type': 'application/json',
             },
-            body:JSON.stringify({
+            body: JSON.stringify({
                 username: this.state.username,
                 password: this.state.password,
             })
@@ -109,10 +109,14 @@ const styles = StyleSheet.create({
         },
         btn: {
             alignSelf: 'stretch',
+            color: 'white',
             padding: 20,
             alignItems: 'center',
-            backgroundColor:'#fff',
+            backgroundColor:'#000000',
         },
+        white: {
+            color:'white',
+        }
 
 
 });
