@@ -39,7 +39,7 @@ export default class Login extends React.Component {
                     <TextInput 
                         style={styles.textInput} placeholder='Password'
                         onChangeText={ (password ) => this.setState({password})}
-                        underlineColorAndroid='transparent'
+                        secureTextEntry= {true} underlineColorAndroid='transparent'
                     />
 
                     <TouchableOpacity
@@ -57,7 +57,7 @@ export default class Login extends React.Component {
 
     login = () => { 
 
-        
+
         
         fetch('http://192.5454.25.2:3000/users', {
             method: 'POST',
@@ -72,6 +72,7 @@ export default class Login extends React.Component {
         })
         .then((response) => response.json())
         .then ((res) =>{
+            alert(res.message);
             if (res.success == true){
                 AsyncStorage.setItem('user', res.user);
                 this.props.navigation.navigate('HomeScreen');
