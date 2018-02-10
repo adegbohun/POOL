@@ -2,8 +2,8 @@ var express = require("express");
 var path = require("path");
 var bodyParser = require("body-parser");
 
-var index = require(".routes/index");
-var bookings = require(".routes/bookings");
+var index = require("./routes/index");
+var bookings = require("./routes/bookings");
 
 var app = express();
 
