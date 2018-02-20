@@ -4,6 +4,7 @@
 import React from 'react';
 import {View, Text, StyleSheet, TouchableOpacity, ListView, Dimensions} from 'react-native';
 const { height, width } = Dimensions.get('window');
+
 export default class BaseScreen extends React.Component {
 
     constructor() {
@@ -31,6 +32,10 @@ export default class BaseScreen extends React.Component {
                     {
                         name: "Trips",
                         route: "trips"
+                    },
+                    {
+                        name: "TripSetup",
+                        route: "trip_setup"
                     },
                     {
                         name: "Messages",

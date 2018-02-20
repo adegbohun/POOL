@@ -9,6 +9,7 @@ import SignUpScreen                         from './src/screens/SignUp';
 import LocationInfoScreen                   from './src/screens/LocationInfo';
 import MessagesScreen                       from './src/screens/Messages';
 import CreateTripScreen                     from './src/screens/CreateTrip';
+import TripSetup                            from './src/screens/TripSetup';
 import BaseScreen                           from './src/screens/base';
 import {StackNavigator} from 'react-navigation';
 
@@ -28,6 +29,9 @@ const NavigationApp = StackNavigator(
         },
         trips: {
             screen: TripsScreen
+        },
+        trip_setup: {
+            screen: TripSetup
         },
         messages: {
             screen: MessagesScreen
