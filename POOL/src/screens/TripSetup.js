@@ -12,6 +12,7 @@ import {
     TouchableOpacity
 }                           from 'react-native';
 
+// Trip SetUp Screens
 export default class TripSetup extends React.Component {
 
     render(){
